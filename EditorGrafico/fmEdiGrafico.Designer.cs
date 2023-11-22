@@ -71,11 +71,14 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnEditorGrafico = new System.Windows.Forms.Panel();
+            this.pbEdiGrafi = new System.Windows.Forms.PictureBox();
             this.tsEstandar.SuspendLayout();
             this.tsLateral.SuspendLayout();
             this.msEdiGrafico.SuspendLayout();
             this.stEstado.SuspendLayout();
+            this.pnEditorGrafico.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEdiGrafi)).BeginInit();
             this.SuspendLayout();
             // 
             // tsEstandar
@@ -96,7 +99,7 @@
             this.ddtsbGrosor});
             this.tsEstandar.Location = new System.Drawing.Point(0, 24);
             this.tsEstandar.Name = "tsEstandar";
-            this.tsEstandar.Size = new System.Drawing.Size(706, 25);
+            this.tsEstandar.Size = new System.Drawing.Size(676, 25);
             this.tsEstandar.TabIndex = 0;
             this.tsEstandar.Text = "toolStrip1";
             // 
@@ -281,7 +284,7 @@
             this.tsbTexto});
             this.tsLateral.Location = new System.Drawing.Point(0, 49);
             this.tsLateral.Name = "tsLateral";
-            this.tsLateral.Size = new System.Drawing.Size(24, 486);
+            this.tsLateral.Size = new System.Drawing.Size(24, 438);
             this.tsLateral.TabIndex = 1;
             this.tsLateral.Text = "toolStrip2";
             // 
@@ -350,7 +353,7 @@
             this.tsmAyuda});
             this.msEdiGrafico.Location = new System.Drawing.Point(0, 0);
             this.msEdiGrafico.Name = "msEdiGrafico";
-            this.msEdiGrafico.Size = new System.Drawing.Size(706, 24);
+            this.msEdiGrafico.Size = new System.Drawing.Size(676, 24);
             this.msEdiGrafico.TabIndex = 2;
             this.msEdiGrafico.Text = "menuStrip1";
             // 
@@ -400,9 +403,9 @@
             this.tsl3,
             this.toolStripStatusLabel3,
             this.tsl4});
-            this.stEstado.Location = new System.Drawing.Point(24, 513);
+            this.stEstado.Location = new System.Drawing.Point(24, 465);
             this.stEstado.Name = "stEstado";
-            this.stEstado.Size = new System.Drawing.Size(682, 22);
+            this.stEstado.Size = new System.Drawing.Size(652, 22);
             this.stEstado.TabIndex = 3;
             this.stEstado.Text = "statusStrip1";
             // 
@@ -450,23 +453,33 @@
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(30, 17);
             // 
-            // panel1
+            // pnEditorGrafico
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(24, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 464);
-            this.panel1.TabIndex = 4;
+            this.pnEditorGrafico.AutoScroll = true;
+            this.pnEditorGrafico.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pnEditorGrafico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnEditorGrafico.Controls.Add(this.pbEdiGrafi);
+            this.pnEditorGrafico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnEditorGrafico.Location = new System.Drawing.Point(24, 49);
+            this.pnEditorGrafico.Name = "pnEditorGrafico";
+            this.pnEditorGrafico.Size = new System.Drawing.Size(652, 416);
+            this.pnEditorGrafico.TabIndex = 4;
+            // 
+            // pbEdiGrafi
+            // 
+            this.pbEdiGrafi.BackColor = System.Drawing.Color.White;
+            this.pbEdiGrafi.Location = new System.Drawing.Point(1, -2);
+            this.pbEdiGrafi.Name = "pbEdiGrafi";
+            this.pbEdiGrafi.Size = new System.Drawing.Size(400, 400);
+            this.pbEdiGrafi.TabIndex = 0;
+            this.pbEdiGrafi.TabStop = false;
             // 
             // fmEdiGrafico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 535);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(676, 487);
+            this.Controls.Add(this.pnEditorGrafico);
             this.Controls.Add(this.stEstado);
             this.Controls.Add(this.tsLateral);
             this.Controls.Add(this.tsEstandar);
@@ -484,6 +497,8 @@
             this.msEdiGrafico.PerformLayout();
             this.stEstado.ResumeLayout(false);
             this.stEstado.PerformLayout();
+            this.pnEditorGrafico.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbEdiGrafi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,7 +548,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnEditorGrafico;
+        private System.Windows.Forms.PictureBox pbEdiGrafi;
     }
 }
 
