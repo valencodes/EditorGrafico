@@ -211,6 +211,13 @@
         GVFGlBFlxGG2fZet7Z+5u68WAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="ddtsbGrosor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAF8AAAAICAYAAACfxyO6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA2SURBVEhL7daxDQAwDMOw/P+02wIdPSuLDDCDLsjErW3u
+        3tGOGsWoUYwaxahRjBpF+F+Pw5ccQJotGq1i4zIAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="itG1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk0GAQAAAAAAAHYAAAAoAAAAXwAAAAMAAAABAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAA/wAA
@@ -276,18 +283,8 @@
         ////////////////////////////8A==
 </value>
   </data>
-  <data name="ddtsbGrosor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAF8AAAAICAYAAACfxyO6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA2SURBVEhL7daxDQAwDMOw/P+02wIdPSuLDDCDLsjErW3u
-        3tGOGsWoUYwaxahRjBpF+F+Pw5ccQJotGq1i4zIAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="tsLateral.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
-  </metadata>
-  <metadata name="msEdiGrafico.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>220, 17</value>
   </metadata>
   <data name="tsbTrazo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -334,4 +331,10 @@
         +brEMioS5+nOfo9xhX8xewAUpak0QROz6gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="msEdiGrafico.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>220, 17</value>
+  </metadata>
+  <metadata name="stEstado.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>344, 17</value>
+  </metadata>
 </root>
