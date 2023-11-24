@@ -84,11 +84,11 @@
             this.itTexto = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmEstilo = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoLíneaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itDiscontinua = new System.Windows.Forms.ToolStripMenuItem();
-            this.itDiscontinuaPuntos = new System.Windows.Forms.ToolStripMenuItem();
-            this.itPunteada = new System.Windows.Forms.ToolStripMenuItem();
-            this.itDiscontinuaDoblePunto = new System.Windows.Forms.ToolStripMenuItem();
-            this.itColorSolido = new System.Windows.Forms.ToolStripMenuItem();
+            this.itLinea1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itLinea2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itLinea3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itLinea4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itLinea5 = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoRellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.líneasVerticalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadrículaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,7 +97,7 @@
             this.líneasEnZigZagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mesaicoEscocésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorSólidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sinRellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itSinRelleno = new System.Windows.Forms.ToolStripMenuItem();
             this.grosorLíneaHomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.colorDeFondoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,17 +115,18 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsl4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnEditorGrafico = new System.Windows.Forms.Panel();
-            this.pbEdiGrafi = new System.Windows.Forms.PictureBox();
+            this.pbEdigrafi = new System.Windows.Forms.PictureBox();
             this.cmnGrafico = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.itcBarraEstandar = new System.Windows.Forms.ToolStripMenuItem();
             this.itcBarraLateral = new System.Windows.Forms.ToolStripMenuItem();
             this.itcBarraEstado = new System.Windows.Forms.ToolStripMenuItem();
+            this.dlgColores = new System.Windows.Forms.ColorDialog();
             this.tsEstandar.SuspendLayout();
             this.tsLateral.SuspendLayout();
             this.msEdiGrafico.SuspendLayout();
             this.stEstado.SuspendLayout();
             this.pnEditorGrafico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEdiGrafi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEdigrafi)).BeginInit();
             this.cmnGrafico.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -270,7 +271,7 @@
             this.itG1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG1.Name = "itG1";
             this.itG1.Padding = new System.Windows.Forms.Padding(0);
-            this.itG1.Size = new System.Drawing.Size(80, 20);
+            this.itG1.Size = new System.Drawing.Size(180, 20);
             this.itG1.Tag = "1";
             // 
             // itG2
@@ -279,7 +280,7 @@
             this.itG2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.itG2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG2.Name = "itG2";
-            this.itG2.Size = new System.Drawing.Size(80, 22);
+            this.itG2.Size = new System.Drawing.Size(180, 22);
             this.itG2.Tag = "2";
             // 
             // itG3
@@ -288,7 +289,7 @@
             this.itG3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.itG3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG3.Name = "itG3";
-            this.itG3.Size = new System.Drawing.Size(80, 22);
+            this.itG3.Size = new System.Drawing.Size(180, 22);
             this.itG3.Tag = "3";
             // 
             // itG4
@@ -297,7 +298,7 @@
             this.itG4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.itG4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG4.Name = "itG4";
-            this.itG4.Size = new System.Drawing.Size(80, 22);
+            this.itG4.Size = new System.Drawing.Size(180, 22);
             this.itG4.Tag = "4";
             this.itG4.Text = "v";
             // 
@@ -307,7 +308,7 @@
             this.itG5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.itG5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG5.Name = "itG5";
-            this.itG5.Size = new System.Drawing.Size(80, 22);
+            this.itG5.Size = new System.Drawing.Size(180, 22);
             this.itG5.Tag = "5";
             this.itG5.Text = "v";
             // 
@@ -317,7 +318,7 @@
             this.itG6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.itG6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.itG6.Name = "itG6";
-            this.itG6.Size = new System.Drawing.Size(80, 22);
+            this.itG6.Size = new System.Drawing.Size(180, 22);
             this.itG6.Tag = "6";
             this.itG6.Text = "v";
             // 
@@ -424,8 +425,9 @@
             // itNuevo
             // 
             this.itNuevo.Name = "itNuevo";
-            this.itNuevo.Size = new System.Drawing.Size(116, 22);
+            this.itNuevo.Size = new System.Drawing.Size(180, 22);
             this.itNuevo.Text = "Nuevo";
+            this.itNuevo.Click += new System.EventHandler(this.itNuevo_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -598,44 +600,44 @@
             // tipoLíneaToolStripMenuItem
             // 
             this.tipoLíneaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itDiscontinua,
-            this.itDiscontinuaPuntos,
-            this.itPunteada,
-            this.itDiscontinuaDoblePunto,
-            this.itColorSolido});
+            this.itLinea1,
+            this.itLinea2,
+            this.itLinea3,
+            this.itLinea4,
+            this.itLinea5});
             this.tipoLíneaToolStripMenuItem.Name = "tipoLíneaToolStripMenuItem";
             this.tipoLíneaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.tipoLíneaToolStripMenuItem.Text = "Tipo Línea";
             // 
-            // itDiscontinua
+            // itLinea1
             // 
-            this.itDiscontinua.Name = "itDiscontinua";
-            this.itDiscontinua.Size = new System.Drawing.Size(215, 22);
-            this.itDiscontinua.Text = "Discontina";
+            this.itLinea1.Name = "itLinea1";
+            this.itLinea1.Size = new System.Drawing.Size(215, 22);
+            this.itLinea1.Text = "Discontina";
             // 
-            // itDiscontinuaPuntos
+            // itLinea2
             // 
-            this.itDiscontinuaPuntos.Name = "itDiscontinuaPuntos";
-            this.itDiscontinuaPuntos.Size = new System.Drawing.Size(215, 22);
-            this.itDiscontinuaPuntos.Text = "Discontinua y Puntos";
+            this.itLinea2.Name = "itLinea2";
+            this.itLinea2.Size = new System.Drawing.Size(215, 22);
+            this.itLinea2.Text = "Discontinua y Puntos";
             // 
-            // itPunteada
+            // itLinea3
             // 
-            this.itPunteada.Name = "itPunteada";
-            this.itPunteada.Size = new System.Drawing.Size(215, 22);
-            this.itPunteada.Text = "Punteada";
+            this.itLinea3.Name = "itLinea3";
+            this.itLinea3.Size = new System.Drawing.Size(215, 22);
+            this.itLinea3.Text = "Punteada";
             // 
-            // itDiscontinuaDoblePunto
+            // itLinea4
             // 
-            this.itDiscontinuaDoblePunto.Name = "itDiscontinuaDoblePunto";
-            this.itDiscontinuaDoblePunto.Size = new System.Drawing.Size(215, 22);
-            this.itDiscontinuaDoblePunto.Text = "Discontinua y Doble Punto";
+            this.itLinea4.Name = "itLinea4";
+            this.itLinea4.Size = new System.Drawing.Size(215, 22);
+            this.itLinea4.Text = "Discontinua y Doble Punto";
             // 
-            // itColorSolido
+            // itLinea5
             // 
-            this.itColorSolido.Name = "itColorSolido";
-            this.itColorSolido.Size = new System.Drawing.Size(215, 22);
-            this.itColorSolido.Text = "Color Solido";
+            this.itLinea5.Name = "itLinea5";
+            this.itLinea5.Size = new System.Drawing.Size(215, 22);
+            this.itLinea5.Text = "Color Solido";
             // 
             // tipoRellenoToolStripMenuItem
             // 
@@ -647,7 +649,7 @@
             this.líneasEnZigZagToolStripMenuItem,
             this.mesaicoEscocésToolStripMenuItem,
             this.colorSólidoToolStripMenuItem,
-            this.sinRellenoToolStripMenuItem});
+            this.itSinRelleno});
             this.tipoRellenoToolStripMenuItem.Name = "tipoRellenoToolStripMenuItem";
             this.tipoRellenoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.tipoRellenoToolStripMenuItem.Text = "Tipo Relleno";
@@ -655,50 +657,50 @@
             // líneasVerticalesToolStripMenuItem
             // 
             this.líneasVerticalesToolStripMenuItem.Name = "líneasVerticalesToolStripMenuItem";
-            this.líneasVerticalesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.líneasVerticalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.líneasVerticalesToolStripMenuItem.Text = "Líneas Verticales";
             // 
             // cuadrículaToolStripMenuItem
             // 
             this.cuadrículaToolStripMenuItem.Name = "cuadrículaToolStripMenuItem";
-            this.cuadrículaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.cuadrículaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cuadrículaToolStripMenuItem.Text = "Cuadrícula";
             // 
             // líneasHorizontalesToolStripMenuItem
             // 
             this.líneasHorizontalesToolStripMenuItem.Name = "líneasHorizontalesToolStripMenuItem";
-            this.líneasHorizontalesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.líneasHorizontalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.líneasHorizontalesToolStripMenuItem.Text = "Líneas Horizontales";
             // 
             // lneasDiagonalesToolStripMenuItem
             // 
             this.lneasDiagonalesToolStripMenuItem.Name = "lneasDiagonalesToolStripMenuItem";
-            this.lneasDiagonalesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.lneasDiagonalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lneasDiagonalesToolStripMenuItem.Text = "L´neas Diagonales";
             // 
             // líneasEnZigZagToolStripMenuItem
             // 
             this.líneasEnZigZagToolStripMenuItem.Name = "líneasEnZigZagToolStripMenuItem";
-            this.líneasEnZigZagToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.líneasEnZigZagToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.líneasEnZigZagToolStripMenuItem.Text = "Líneas en Zig Zag";
             // 
             // mesaicoEscocésToolStripMenuItem
             // 
             this.mesaicoEscocésToolStripMenuItem.Name = "mesaicoEscocésToolStripMenuItem";
-            this.mesaicoEscocésToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.mesaicoEscocésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mesaicoEscocésToolStripMenuItem.Text = "Mesaico Escocés";
             // 
             // colorSólidoToolStripMenuItem
             // 
             this.colorSólidoToolStripMenuItem.Name = "colorSólidoToolStripMenuItem";
-            this.colorSólidoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.colorSólidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorSólidoToolStripMenuItem.Text = "Color Sólido";
             // 
-            // sinRellenoToolStripMenuItem
+            // itSinRelleno
             // 
-            this.sinRellenoToolStripMenuItem.Name = "sinRellenoToolStripMenuItem";
-            this.sinRellenoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.sinRellenoToolStripMenuItem.Text = "Sin Relleno";
+            this.itSinRelleno.Name = "itSinRelleno";
+            this.itSinRelleno.Size = new System.Drawing.Size(180, 22);
+            this.itSinRelleno.Text = "Sin Relleno";
             // 
             // grosorLíneaHomaToolStripMenuItem
             // 
@@ -816,21 +818,21 @@
             this.pnEditorGrafico.AutoScroll = true;
             this.pnEditorGrafico.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pnEditorGrafico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnEditorGrafico.Controls.Add(this.pbEdiGrafi);
+            this.pnEditorGrafico.Controls.Add(this.pbEdigrafi);
             this.pnEditorGrafico.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnEditorGrafico.Location = new System.Drawing.Point(24, 49);
             this.pnEditorGrafico.Name = "pnEditorGrafico";
             this.pnEditorGrafico.Size = new System.Drawing.Size(652, 416);
             this.pnEditorGrafico.TabIndex = 4;
             // 
-            // pbEdiGrafi
+            // pbEdigrafi
             // 
-            this.pbEdiGrafi.BackColor = System.Drawing.Color.White;
-            this.pbEdiGrafi.Location = new System.Drawing.Point(1, -2);
-            this.pbEdiGrafi.Name = "pbEdiGrafi";
-            this.pbEdiGrafi.Size = new System.Drawing.Size(400, 400);
-            this.pbEdiGrafi.TabIndex = 0;
-            this.pbEdiGrafi.TabStop = false;
+            this.pbEdigrafi.BackColor = System.Drawing.Color.White;
+            this.pbEdigrafi.Location = new System.Drawing.Point(1, -2);
+            this.pbEdigrafi.Name = "pbEdigrafi";
+            this.pbEdigrafi.Size = new System.Drawing.Size(400, 400);
+            this.pbEdigrafi.TabIndex = 0;
+            this.pbEdigrafi.TabStop = false;
             // 
             // cmnGrafico
             // 
@@ -839,14 +841,14 @@
             this.itcBarraLateral,
             this.itcBarraEstado});
             this.cmnGrafico.Name = "cmnGrafico";
-            this.cmnGrafico.Size = new System.Drawing.Size(181, 92);
+            this.cmnGrafico.Size = new System.Drawing.Size(150, 70);
             // 
             // itcBarraEstandar
             // 
             this.itcBarraEstandar.Checked = true;
             this.itcBarraEstandar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.itcBarraEstandar.Name = "itcBarraEstandar";
-            this.itcBarraEstandar.Size = new System.Drawing.Size(180, 22);
+            this.itcBarraEstandar.Size = new System.Drawing.Size(149, 22);
             this.itcBarraEstandar.Text = "Barra Estándar";
             this.itcBarraEstandar.Click += new System.EventHandler(this.barraEstandarToolStripMenuItem_Click);
             // 
@@ -855,7 +857,7 @@
             this.itcBarraLateral.Checked = true;
             this.itcBarraLateral.CheckState = System.Windows.Forms.CheckState.Checked;
             this.itcBarraLateral.Name = "itcBarraLateral";
-            this.itcBarraLateral.Size = new System.Drawing.Size(180, 22);
+            this.itcBarraLateral.Size = new System.Drawing.Size(149, 22);
             this.itcBarraLateral.Text = "Barra Lateral";
             this.itcBarraLateral.Click += new System.EventHandler(this.itBarraLateral_Click);
             // 
@@ -864,7 +866,7 @@
             this.itcBarraEstado.Checked = true;
             this.itcBarraEstado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.itcBarraEstado.Name = "itcBarraEstado";
-            this.itcBarraEstado.Size = new System.Drawing.Size(180, 22);
+            this.itcBarraEstado.Size = new System.Drawing.Size(149, 22);
             this.itcBarraEstado.Text = "Barra Estado";
             this.itcBarraEstado.Click += new System.EventHandler(this.itBarraEstado_Click);
             // 
@@ -883,6 +885,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "fmEdiGrafico";
             this.Text = "Dibujo";
+            this.Load += new System.EventHandler(this.fmEdiGrafico_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fmEdiGrafico_MouseDown);
             this.tsEstandar.ResumeLayout(false);
             this.tsEstandar.PerformLayout();
@@ -893,7 +896,7 @@
             this.stEstado.ResumeLayout(false);
             this.stEstado.PerformLayout();
             this.pnEditorGrafico.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbEdiGrafi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEdigrafi)).EndInit();
             this.cmnGrafico.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -945,7 +948,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.Panel pnEditorGrafico;
-        private System.Windows.Forms.PictureBox pbEdiGrafi;
+        private System.Windows.Forms.PictureBox pbEdigrafi;
         private System.Windows.Forms.ToolStripMenuItem itNuevo;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem itAbrir;
@@ -967,11 +970,11 @@
         private System.Windows.Forms.ToolStripMenuItem itElipse;
         private System.Windows.Forms.ToolStripMenuItem itTexto;
         private System.Windows.Forms.ToolStripMenuItem tipoLíneaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem itDiscontinua;
-        private System.Windows.Forms.ToolStripMenuItem itDiscontinuaPuntos;
-        private System.Windows.Forms.ToolStripMenuItem itPunteada;
-        private System.Windows.Forms.ToolStripMenuItem itDiscontinuaDoblePunto;
-        private System.Windows.Forms.ToolStripMenuItem itColorSolido;
+        private System.Windows.Forms.ToolStripMenuItem itLinea1;
+        private System.Windows.Forms.ToolStripMenuItem itLinea2;
+        private System.Windows.Forms.ToolStripMenuItem itLinea3;
+        private System.Windows.Forms.ToolStripMenuItem itLinea4;
+        private System.Windows.Forms.ToolStripMenuItem itLinea5;
         private System.Windows.Forms.ToolStripMenuItem tipoRellenoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem líneasVerticalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuadrículaToolStripMenuItem;
@@ -980,7 +983,7 @@
         private System.Windows.Forms.ToolStripMenuItem líneasEnZigZagToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mesaicoEscocésToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorSólidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sinRellenoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itSinRelleno;
         private System.Windows.Forms.ToolStripMenuItem grosorLíneaHomaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem colorDeFondoToolStripMenuItem;
@@ -992,6 +995,7 @@
         private System.Windows.Forms.ToolStripMenuItem itcBarraEstado;
         private System.Windows.Forms.ToolStripMenuItem itInstrucciones;
         private System.Windows.Forms.ToolStripMenuItem itAcercade;
+        private System.Windows.Forms.ColorDialog dlgColores;
     }
 }
 
