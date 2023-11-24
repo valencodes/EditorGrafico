@@ -12,8 +12,9 @@ namespace EditorGrafico
 {
     public partial class fmTexto : Form
     {
-        SolidBrush colortexto;
-        Font mifuente;
+        public SolidBrush colortexto;
+        public Font mifuente; // Tipo fuente Para la figura de Texto
+        
         public fmTexto()
         {
             InitializeComponent();

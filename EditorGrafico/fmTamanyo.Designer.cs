@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbIzq = new System.Windows.Forms.Label();
+            this.lbIz = new System.Windows.Forms.Label();
             this.lbDer = new System.Windows.Forms.Label();
             this.tbIzq = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbDer = new System.Windows.Forms.TextBox();
             this.lbPxIz = new System.Windows.Forms.Label();
             this.lbPxDer = new System.Windows.Forms.Label();
             this.btAceptar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbIzq
+            // lbIz
             // 
-            this.lbIzq.AutoSize = true;
-            this.lbIzq.Location = new System.Drawing.Point(30, 30);
-            this.lbIzq.Name = "lbIzq";
-            this.lbIzq.Size = new System.Drawing.Size(38, 13);
-            this.lbIzq.TabIndex = 0;
-            this.lbIzq.Text = "Ancho";
+            this.lbIz.AutoSize = true;
+            this.lbIz.Location = new System.Drawing.Point(30, 30);
+            this.lbIz.Name = "lbIz";
+            this.lbIz.Size = new System.Drawing.Size(38, 13);
+            this.lbIz.TabIndex = 0;
+            this.lbIz.Text = "Ancho";
             // 
             // lbDer
             // 
@@ -60,19 +60,21 @@
             // 
             this.tbIzq.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbIzq.Location = new System.Drawing.Point(33, 46);
+            this.tbIzq.MaxLength = 3000;
             this.tbIzq.Name = "tbIzq";
             this.tbIzq.Size = new System.Drawing.Size(78, 20);
             this.tbIzq.TabIndex = 2;
             this.tbIzq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIzq_KeyPress);
             // 
-            // textBox1
+            // tbDer
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(173, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIzq_KeyPress);
+            this.tbDer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbDer.Location = new System.Drawing.Point(173, 46);
+            this.tbDer.MaxLength = 3000;
+            this.tbDer.Name = "tbDer";
+            this.tbDer.Size = new System.Drawing.Size(78, 20);
+            this.tbDer.TabIndex = 2;
+            this.tbDer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIzq_KeyPress);
             // 
             // lbPxIz
             // 
@@ -123,10 +125,10 @@
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.lbPxDer);
             this.Controls.Add(this.lbPxIz);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbDer);
             this.Controls.Add(this.tbIzq);
             this.Controls.Add(this.lbDer);
-            this.Controls.Add(this.lbIzq);
+            this.Controls.Add(this.lbIz);
             this.Name = "fmTamanyo";
             this.Text = "fmTamanyo";
             this.ResumeLayout(false);
@@ -135,14 +137,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbIzq;
-        private System.Windows.Forms.Label lbDer;
-        private System.Windows.Forms.TextBox tbIzq;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbPxIz;
         private System.Windows.Forms.Label lbPxDer;
-        private System.Windows.Forms.Button btAceptar;
-        private System.Windows.Forms.Button btCancelar;
+        public System.Windows.Forms.TextBox tbIzq;
+        public System.Windows.Forms.TextBox tbDer;
+        public System.Windows.Forms.Button btAceptar;
+        public System.Windows.Forms.Button btCancelar;
+        public System.Windows.Forms.Label lbIz;
+        public System.Windows.Forms.Label lbDer;
     }
 }

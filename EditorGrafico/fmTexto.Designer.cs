@@ -99,11 +99,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tbTexto;
-        private System.Windows.Forms.Button btFuente;
-        private System.Windows.Forms.Button btAplicar;
-        private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.FontDialog dlgFuente;
+        public System.Windows.Forms.TextBox tbTexto;
+        public System.Windows.Forms.Button btFuente;
+        public System.Windows.Forms.Button btAplicar;
+        public System.Windows.Forms.Button btSalir;
     }
 }
