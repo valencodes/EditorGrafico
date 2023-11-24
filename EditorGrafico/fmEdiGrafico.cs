@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,7 @@ namespace EditorGrafico
         Font mifuente; // Tipo fuente Para la figura de Texto
         string mitexto; // Texto a dibujar
         Bitmap CuadradoBoton; // Gráfico que se muestra en botones de la barra Estándar
-       
+        private bool cambios = false;
 
         public fmEdiGrafico()
         {
@@ -142,8 +143,21 @@ namespace EditorGrafico
 
         private void itNuevo_Click(object sender, EventArgs e)
         {
+            if (cambios)
+            {
+                DialogResult resultado = MessageBox.Show("Hay Cambios sin Guardar. Guardas ? ", "Guardar Cambios", MessageBoxButtons.YesNoCancel);
+                switch (resultado)
+                {
+                    case DialogResult.Yes: // Si contesta si
+                        itGuardar.PerformClick();// Invocamos evento botón guardar 
+                        break; //Después de Guardar Continuamos con operación de nuevo
+                    case DialogResult.Cancel: // Si decide cancelar 
+                        return; // Abortamos operación de nuevo
+                }
+            }
             Inicializar();
         }
+        
 
         private void tsbLinea_Click(object sender, EventArgs e)
         {
@@ -193,7 +207,7 @@ namespace EditorGrafico
 
         private void tsbGoma_Click(object sender, EventArgs e)
         {
-                accion = "Borrar"; //Indicamos figura a dibujar
+                accion = "Goma"; //Indicamos figura a dibujar
                 CrearCursorGoma(); //Creamos puntero ratón
                 desmarca(); //desmarcammos todas la figuras
                 tsbGoma.Checked = true; //Marcamos la elegida
@@ -283,7 +297,7 @@ namespace EditorGrafico
                     break;
                 case "Rectangulo":
                     if (rellenando)
-                        if (itLinea5.Checked)
+                        if (itSolido.Checked)
                             e.Graphics.FillRectangle(relleno, new Rectangle(Math.Min(OrigenX,
                                 actualX), Math.Min(OrigenY, actualY), Math.Abs(actualX - OrigenX),
                                 Math.Abs(actualY - OrigenY)));
@@ -298,7 +312,7 @@ namespace EditorGrafico
                     int radio = Convert.ToInt32(Math.Truncate(Math.Sqrt(Math.Pow((OrigenX -
                     actualX), 2) + Math.Pow((OrigenY - actualY), 2))));
                     if (rellenando)
-                        if (itLinea5.Checked)
+                        if (itSolido.Checked)
                             e.Graphics.FillEllipse(relleno, OrigenX - radio, OrigenY - radio,
                             radio * 2, radio * 2);
                         else
@@ -309,7 +323,7 @@ namespace EditorGrafico
                     break;
                 case "Elipse":
                     if (rellenando)
-                        if (itLinea5.Checked)
+                        if (itSolido.Checked)
                             e.Graphics.FillEllipse(relleno, new Rectangle(Math.Min(OrigenX,
                             actualX), Math.Min(OrigenY, actualY), Math.Abs(actualX - OrigenX),
                             Math.Abs(actualY - OrigenY)));
@@ -330,6 +344,7 @@ namespace EditorGrafico
                     break;
             }
             rectInvalido = new Rectangle(rect.X - 3, rect.Y - 3, rect.Width + 20, rect.Height + 20);
+            cambios = true;
         }
 
         private void Dibujar()
@@ -470,6 +485,20 @@ namespace EditorGrafico
 
         private void itAbrir_Click(object sender, EventArgs e)
         {
+       
+                if (cambios)
+                {
+                    DialogResult resultado = MessageBox.Show("Hay Cambios sin Guardar. Guardas ? ", "Guardar Cambios", MessageBoxButtons.YesNoCancel);
+                    switch (resultado)
+                    {
+                        case DialogResult.Yes: // Si contesta si
+                            itGuardar.PerformClick();// Invocamos evento botón guardar 
+                            break; //Después de Guardar Continuamos con operación de nuevo
+                        case DialogResult.Cancel: // Si decide cancelar 
+                            return; // Abortamos operación de nuevo
+                    }
+                    
+                }
             dlgAbrirDibujo.FileName = Text;
             if (dlgAbrirDibujo.ShowDialog() == DialogResult.OK &&
             dlgAbrirDibujo.FileName.Length > 0)
@@ -681,6 +710,80 @@ namespace EditorGrafico
                     tsbColorRelleno.Image = Properties.Resources.brocha;
                     break;
             }
+        }
+
+        private void itInstrucciones_Click(object sender, EventArgs e)
+        {
+            // Si utilizáramos StreamReader y ReadToEnd() las letras acentuadas se pierden.
+            FileStream fe = null;
+            try
+            { // Creamos un flujo desde el fichero texto.txt
+                fe = new FileStream(".\\ficheros\\ayuda.txt", //Sin @ escapando \
+                FileMode.Open, FileAccess.Read);
+                char[] cBuffer = new char[(int)fe.Length]; //Creamos array de char con tamaño 
+                                                           // del fichero
+                byte[] bBuffer = new byte[(int)fe.Length]; //Creamos array de byte igual
+                                                           // Read Lee del fichero lo que se indica
+                fe.Read(bBuffer, 0, (int)fe.Length); //Leemos del fichero en formato byte
+                                                     // Creamos un objeto string con el texto leído 
+                Array.Copy(bBuffer, cBuffer, bBuffer.Length); //Copiamos lo que hemos leído 
+                                                              // en un array de byte en un array de char
+                String str = new String(cBuffer, 0, (int)fe.Length); //Creamos el string a 
+                                                                     // partir del array de char
+                MessageBox.Show(str, "Ayuda Para Dibujar"); // Mostramos el texto leído
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                if (fe != null) fe.Close(); // Cerramos el fichero
+            }
+
+        }
+
+        private void fmEdiGrafico_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (cambios)
+            {
+                DialogResult resultado = MessageBox.Show("Hay Cambios sin Guardar. ¿Deseas guardarlos?", "Guardar Cambios", MessageBoxButtons.YesNoCancel);
+                switch (resultado)
+                {
+                    case DialogResult.Yes:
+                        itGuardar.PerformClick();
+                        break;
+                    case DialogResult.No:
+                        cambios = false;
+                        Application.Exit();
+                        break;
+                    case DialogResult.Cancel:
+                        e.Cancel = true;
+                        break;
+                }
+            }
+    
+        }
+
+        private void itSalir_Click(object sender, EventArgs e)
+        {
+            if (cambios)
+            {
+                DialogResult resultado = MessageBox.Show("Hay Cambios sin Guardar. ¿Deseas guardarlos?", "Guardar Cambios", MessageBoxButtons.YesNoCancel);
+                switch (resultado)
+                {
+                    case DialogResult.Yes:
+                        itGuardar.PerformClick();
+                        break;
+                    case DialogResult.No:
+                        cambios = false;
+                        Application.Exit();
+                        break;
+                    case DialogResult.Cancel:
+                        return;
+                }
+            }
+            Application.Exit(); 
         }
 
         private void toolStripStatusLabel1_Click_1(object sender, EventArgs e)
