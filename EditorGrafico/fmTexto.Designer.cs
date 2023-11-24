@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmTexto));
             this.tbTexto = new System.Windows.Forms.TextBox();
-            this.btFuente = new System.Windows.Forms.Button();
-            this.btAplicar = new System.Windows.Forms.Button();
-            this.btSalir = new System.Windows.Forms.Button();
             this.dlgFuente = new System.Windows.Forms.FontDialog();
+            this.btSalir = new System.Windows.Forms.Button();
+            this.btAplicar = new System.Windows.Forms.Button();
+            this.btFuente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbTexto
@@ -44,38 +43,38 @@
             this.tbTexto.Size = new System.Drawing.Size(100, 20);
             this.tbTexto.TabIndex = 0;
             // 
-            // btFuente
+            // btSalir
             // 
-            this.btFuente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFuente.Image = ((System.Drawing.Image)(resources.GetObject("btFuente.Image")));
-            this.btFuente.Location = new System.Drawing.Point(118, 12);
-            this.btFuente.Name = "btFuente";
-            this.btFuente.Size = new System.Drawing.Size(30, 20);
-            this.btFuente.TabIndex = 1;
-            this.btFuente.UseVisualStyleBackColor = true;
-            this.btFuente.Click += new System.EventHandler(this.btFuente_Click);
+            this.btSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSalir.Image = global::EditorGrafico.Properties.Resources.salir2;
+            this.btSalir.Location = new System.Drawing.Point(190, 12);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(30, 20);
+            this.btSalir.TabIndex = 1;
+            this.btSalir.UseVisualStyleBackColor = true;
             // 
             // btAplicar
             // 
             this.btAplicar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btAplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAplicar.Image = ((System.Drawing.Image)(resources.GetObject("btAplicar.Image")));
+            this.btAplicar.Image = global::EditorGrafico.Properties.Resources.applycodechanges_6548_32;
             this.btAplicar.Location = new System.Drawing.Point(154, 12);
             this.btAplicar.Name = "btAplicar";
             this.btAplicar.Size = new System.Drawing.Size(30, 20);
             this.btAplicar.TabIndex = 1;
             this.btAplicar.UseVisualStyleBackColor = true;
             // 
-            // btSalir
+            // btFuente
             // 
-            this.btSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSalir.Image = ((System.Drawing.Image)(resources.GetObject("btSalir.Image")));
-            this.btSalir.Location = new System.Drawing.Point(190, 12);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(30, 20);
-            this.btSalir.TabIndex = 1;
-            this.btSalir.UseVisualStyleBackColor = true;
+            this.btFuente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFuente.Image = global::EditorGrafico.Properties.Resources.texto1;
+            this.btFuente.Location = new System.Drawing.Point(118, 12);
+            this.btFuente.Name = "btFuente";
+            this.btFuente.Size = new System.Drawing.Size(30, 20);
+            this.btFuente.TabIndex = 1;
+            this.btFuente.UseVisualStyleBackColor = true;
+            this.btFuente.Click += new System.EventHandler(this.btFuente_Click);
             // 
             // fmTexto
             // 

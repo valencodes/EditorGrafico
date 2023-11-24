@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmAcercade.resx">
+      <DependentUpon>fmAcercade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmEdiGrafico.resx">
       <DependentUpon>fmEdiGrafico.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +115,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Grosor6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVGC2QDAM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFile_6276_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_6529_24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goma.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorfondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorfondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elipse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texto.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texto1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applycodechanges_6548_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir2.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

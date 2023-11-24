@@ -35,32 +35,10 @@
             this.itcBarraEstandar = new System.Windows.Forms.ToolStripMenuItem();
             this.itcBarraLateral = new System.Windows.Forms.ToolStripMenuItem();
             this.itcBarraEstado = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
-            this.tsbAbrir = new System.Windows.Forms.ToolStripButton();
-            this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
-            this.tsbTamanyo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsbGoma = new System.Windows.Forms.ToolStripButton();
-            this.tsbBorrarSeleccion = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsbColorFondo = new System.Windows.Forms.ToolStripButton();
-            this.tsbColorlapiz = new System.Windows.Forms.ToolStripButton();
-            this.tsbColorRelleno = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.ddtsbGrosor = new System.Windows.Forms.ToolStripDropDownButton();
-            this.itG1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.itG2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.itG3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.itG4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.itG5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.itG6 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsLateral = new System.Windows.Forms.ToolStrip();
-            this.tsbTrazo = new System.Windows.Forms.ToolStripButton();
-            this.tsbLinea = new System.Windows.Forms.ToolStripButton();
-            this.tsbRectangulo = new System.Windows.Forms.ToolStripButton();
-            this.tsbCirculo = new System.Windows.Forms.ToolStripButton();
-            this.tsbElipse = new System.Windows.Forms.ToolStripButton();
-            this.tsbTexto = new System.Windows.Forms.ToolStripButton();
             this.msEdiGrafico = new System.Windows.Forms.MenuStrip();
             this.tsmArchivo = new System.Windows.Forms.ToolStripMenuItem();
             this.itNuevo = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,11 +97,32 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsl4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnEditorGrafico = new System.Windows.Forms.Panel();
-            this.pbEdigrafi = new System.Windows.Forms.PictureBox();
             this.dlgColores = new System.Windows.Forms.ColorDialog();
             this.dlgAbrirDibujo = new System.Windows.Forms.OpenFileDialog();
             this.dlgGuardarDibujo = new System.Windows.Forms.SaveFileDialog();
             this.ttEdiGrafi = new System.Windows.Forms.ToolTip(this.components);
+            this.pbEdigrafi = new System.Windows.Forms.PictureBox();
+            this.tsbTrazo = new System.Windows.Forms.ToolStripButton();
+            this.tsbLinea = new System.Windows.Forms.ToolStripButton();
+            this.tsbRectangulo = new System.Windows.Forms.ToolStripButton();
+            this.tsbCirculo = new System.Windows.Forms.ToolStripButton();
+            this.tsbElipse = new System.Windows.Forms.ToolStripButton();
+            this.tsbTexto = new System.Windows.Forms.ToolStripButton();
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tsbAbrir = new System.Windows.Forms.ToolStripButton();
+            this.tsbGuardar = new System.Windows.Forms.ToolStripButton();
+            this.tsbGoma = new System.Windows.Forms.ToolStripButton();
+            this.tsbBorrarSeleccion = new System.Windows.Forms.ToolStripButton();
+            this.tsbColorFondo = new System.Windows.Forms.ToolStripButton();
+            this.tsbColorlapiz = new System.Windows.Forms.ToolStripButton();
+            this.tsbColorRelleno = new System.Windows.Forms.ToolStripButton();
+            this.ddtsbGrosor = new System.Windows.Forms.ToolStripDropDownButton();
+            this.itG1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itG2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itG3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itG4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itG5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.itG6 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsEstandar.SuspendLayout();
             this.cmnGrafico.SuspendLayout();
             this.tsLateral.SuspendLayout();
@@ -140,7 +139,6 @@
             this.tsbNuevo,
             this.tsbAbrir,
             this.tsbGuardar,
-            this.tsbTamanyo,
             this.toolStripSeparator1,
             this.tsbGoma,
             this.tsbBorrarSeleccion,
@@ -192,193 +190,20 @@
             this.itcBarraEstado.Text = "Barra Estado";
             this.itcBarraEstado.Click += new System.EventHandler(this.itBarraEstado_Click);
             // 
-            // tsbNuevo
-            // 
-            this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbNuevo.Image = ((System.Drawing.Image)(resources.GetObject("tsbNuevo.Image")));
-            this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbNuevo.Name = "tsbNuevo";
-            this.tsbNuevo.Size = new System.Drawing.Size(23, 22);
-            this.tsbNuevo.Text = "toolStripButton1";
-            this.tsbNuevo.ToolTipText = "Nuevo";
-            this.tsbNuevo.Click += new System.EventHandler(this.itNuevo_Click);
-            // 
-            // tsbAbrir
-            // 
-            this.tsbAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbAbrir.Image = ((System.Drawing.Image)(resources.GetObject("tsbAbrir.Image")));
-            this.tsbAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbAbrir.Name = "tsbAbrir";
-            this.tsbAbrir.Size = new System.Drawing.Size(23, 22);
-            this.tsbAbrir.Text = "toolStripButton1";
-            this.tsbAbrir.ToolTipText = "Abrir";
-            this.tsbAbrir.Click += new System.EventHandler(this.itAbrir_Click);
-            // 
-            // tsbGuardar
-            // 
-            this.tsbGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbGuardar.Image = ((System.Drawing.Image)(resources.GetObject("tsbGuardar.Image")));
-            this.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbGuardar.Name = "tsbGuardar";
-            this.tsbGuardar.Size = new System.Drawing.Size(23, 22);
-            this.tsbGuardar.Text = "toolStripButton1";
-            this.tsbGuardar.ToolTipText = "Guardar";
-            this.tsbGuardar.Click += new System.EventHandler(this.itGuardar_Click);
-            // 
-            // tsbTamanyo
-            // 
-            this.tsbTamanyo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTamanyo.Image = ((System.Drawing.Image)(resources.GetObject("tsbTamanyo.Image")));
-            this.tsbTamanyo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTamanyo.Name = "tsbTamanyo";
-            this.tsbTamanyo.Size = new System.Drawing.Size(23, 22);
-            this.tsbTamanyo.Text = "toolStripButton1";
-            this.tsbTamanyo.ToolTipText = "Tamaño";
-            this.tsbTamanyo.Click += new System.EventHandler(this.itTamanyo_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tsbGoma
-            // 
-            this.tsbGoma.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbGoma.Image = ((System.Drawing.Image)(resources.GetObject("tsbGoma.Image")));
-            this.tsbGoma.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbGoma.Name = "tsbGoma";
-            this.tsbGoma.Size = new System.Drawing.Size(23, 22);
-            this.tsbGoma.Text = "toolStripButton2";
-            this.tsbGoma.ToolTipText = "Goma";
-            this.tsbGoma.Click += new System.EventHandler(this.tsbGoma_Click);
-            // 
-            // tsbBorrarSeleccion
-            // 
-            this.tsbBorrarSeleccion.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbBorrarSeleccion.Image = ((System.Drawing.Image)(resources.GetObject("tsbBorrarSeleccion.Image")));
-            this.tsbBorrarSeleccion.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbBorrarSeleccion.Name = "tsbBorrarSeleccion";
-            this.tsbBorrarSeleccion.Size = new System.Drawing.Size(23, 22);
-            this.tsbBorrarSeleccion.Text = "toolStripButton2";
-            this.tsbBorrarSeleccion.ToolTipText = "Borrar selección";
-            this.tsbBorrarSeleccion.Click += new System.EventHandler(this.tsbBorrarSeleccion_Click_1);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // tsbColorFondo
-            // 
-            this.tsbColorFondo.Image = ((System.Drawing.Image)(resources.GetObject("tsbColorFondo.Image")));
-            this.tsbColorFondo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbColorFondo.Name = "tsbColorFondo";
-            this.tsbColorFondo.Size = new System.Drawing.Size(93, 22);
-            this.tsbColorFondo.Text = "Color Fondo";
-            this.tsbColorFondo.Click += new System.EventHandler(this.tsbColorFondo_Click);
-            // 
-            // tsbColorlapiz
-            // 
-            this.tsbColorlapiz.Image = ((System.Drawing.Image)(resources.GetObject("tsbColorlapiz.Image")));
-            this.tsbColorlapiz.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbColorlapiz.Name = "tsbColorlapiz";
-            this.tsbColorlapiz.Size = new System.Drawing.Size(86, 22);
-            this.tsbColorlapiz.Text = "Color Lápiz";
-            this.tsbColorlapiz.Click += new System.EventHandler(this.tsbColorlapiz_Click);
-            // 
-            // tsbColorRelleno
-            // 
-            this.tsbColorRelleno.Image = ((System.Drawing.Image)(resources.GetObject("tsbColorRelleno.Image")));
-            this.tsbColorRelleno.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbColorRelleno.Name = "tsbColorRelleno";
-            this.tsbColorRelleno.Size = new System.Drawing.Size(98, 22);
-            this.tsbColorRelleno.Text = "Color Relleno";
-            this.tsbColorRelleno.Click += new System.EventHandler(this.tsbColorRelleno_Click);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // ddtsbGrosor
-            // 
-            this.ddtsbGrosor.AutoSize = false;
-            this.ddtsbGrosor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ddtsbGrosor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.itG1,
-            this.itG2,
-            this.itG3,
-            this.itG4,
-            this.itG5,
-            this.itG6});
-            this.ddtsbGrosor.Image = global::EditorGrafico.Properties.Resources.Grosor6;
-            this.ddtsbGrosor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ddtsbGrosor.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ddtsbGrosor.Name = "ddtsbGrosor";
-            this.ddtsbGrosor.Size = new System.Drawing.Size(90, 22);
-            this.ddtsbGrosor.Text = "Grosor";
-            this.ddtsbGrosor.Click += new System.EventHandler(this.ddtsbGrosor_Click);
-            // 
-            // itG1
-            // 
-            this.itG1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG1.BackgroundImage")));
-            this.itG1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG1.Name = "itG1";
-            this.itG1.Padding = new System.Windows.Forms.Padding(0);
-            this.itG1.Size = new System.Drawing.Size(67, 20);
-            this.itG1.Tag = "1";
-            this.itG1.Click += new System.EventHandler(this.itG1_Click);
-            // 
-            // itG2
-            // 
-            this.itG2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG2.BackgroundImage")));
-            this.itG2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG2.Name = "itG2";
-            this.itG2.Size = new System.Drawing.Size(67, 22);
-            this.itG2.Tag = "2";
-            this.itG2.Click += new System.EventHandler(this.itG1_Click);
-            // 
-            // itG3
-            // 
-            this.itG3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG3.BackgroundImage")));
-            this.itG3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG3.Name = "itG3";
-            this.itG3.Size = new System.Drawing.Size(67, 22);
-            this.itG3.Tag = "3";
-            this.itG3.Click += new System.EventHandler(this.itG1_Click);
-            // 
-            // itG4
-            // 
-            this.itG4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG4.BackgroundImage")));
-            this.itG4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG4.Name = "itG4";
-            this.itG4.Size = new System.Drawing.Size(67, 22);
-            this.itG4.Tag = "4";
-            this.itG4.Click += new System.EventHandler(this.itG1_Click);
-            // 
-            // itG5
-            // 
-            this.itG5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG5.BackgroundImage")));
-            this.itG5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG5.Name = "itG5";
-            this.itG5.Size = new System.Drawing.Size(67, 22);
-            this.itG5.Tag = "5";
-            this.itG5.Click += new System.EventHandler(this.itG1_Click);
-            // 
-            // itG6
-            // 
-            this.itG6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG6.BackgroundImage")));
-            this.itG6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.itG6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.itG6.Name = "itG6";
-            this.itG6.Size = new System.Drawing.Size(67, 22);
-            this.itG6.Tag = "6";
-            this.itG6.Click += new System.EventHandler(this.itG1_Click);
             // 
             // tsLateral
             // 
@@ -396,78 +221,6 @@
             this.tsLateral.Size = new System.Drawing.Size(24, 438);
             this.tsLateral.TabIndex = 1;
             this.tsLateral.Text = "toolStrip2";
-            // 
-            // tsbTrazo
-            // 
-            this.tsbTrazo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTrazo.Image = ((System.Drawing.Image)(resources.GetObject("tsbTrazo.Image")));
-            this.tsbTrazo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTrazo.Name = "tsbTrazo";
-            this.tsbTrazo.Size = new System.Drawing.Size(21, 20);
-            this.tsbTrazo.Tag = "trazo";
-            this.tsbTrazo.Text = "toolStripButton1";
-            this.tsbTrazo.ToolTipText = "Lápiz";
-            this.tsbTrazo.Click += new System.EventHandler(this.tsbLinea_Click);
-            // 
-            // tsbLinea
-            // 
-            this.tsbLinea.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbLinea.Image = ((System.Drawing.Image)(resources.GetObject("tsbLinea.Image")));
-            this.tsbLinea.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbLinea.Name = "tsbLinea";
-            this.tsbLinea.Size = new System.Drawing.Size(21, 20);
-            this.tsbLinea.Tag = "linea";
-            this.tsbLinea.Text = "toolStripButton1";
-            this.tsbLinea.ToolTipText = "Línea";
-            this.tsbLinea.Click += new System.EventHandler(this.tsbLinea_Click);
-            // 
-            // tsbRectangulo
-            // 
-            this.tsbRectangulo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbRectangulo.Image = ((System.Drawing.Image)(resources.GetObject("tsbRectangulo.Image")));
-            this.tsbRectangulo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbRectangulo.Name = "tsbRectangulo";
-            this.tsbRectangulo.Size = new System.Drawing.Size(21, 20);
-            this.tsbRectangulo.Tag = "rectangulo";
-            this.tsbRectangulo.Text = "toolStripButton1";
-            this.tsbRectangulo.ToolTipText = "Rectángulo";
-            this.tsbRectangulo.Click += new System.EventHandler(this.tsbLinea_Click);
-            // 
-            // tsbCirculo
-            // 
-            this.tsbCirculo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbCirculo.Image = ((System.Drawing.Image)(resources.GetObject("tsbCirculo.Image")));
-            this.tsbCirculo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbCirculo.Name = "tsbCirculo";
-            this.tsbCirculo.Size = new System.Drawing.Size(21, 20);
-            this.tsbCirculo.Tag = "circulo";
-            this.tsbCirculo.Text = "toolStripButton1";
-            this.tsbCirculo.ToolTipText = "Circulo";
-            this.tsbCirculo.Click += new System.EventHandler(this.tsbLinea_Click);
-            // 
-            // tsbElipse
-            // 
-            this.tsbElipse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbElipse.Image = ((System.Drawing.Image)(resources.GetObject("tsbElipse.Image")));
-            this.tsbElipse.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbElipse.Name = "tsbElipse";
-            this.tsbElipse.Size = new System.Drawing.Size(21, 20);
-            this.tsbElipse.Tag = "elipse";
-            this.tsbElipse.Text = "toolStripButton1";
-            this.tsbElipse.ToolTipText = "Elipse";
-            this.tsbElipse.Click += new System.EventHandler(this.tsbLinea_Click);
-            // 
-            // tsbTexto
-            // 
-            this.tsbTexto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbTexto.Image = ((System.Drawing.Image)(resources.GetObject("tsbTexto.Image")));
-            this.tsbTexto.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbTexto.Name = "tsbTexto";
-            this.tsbTexto.Size = new System.Drawing.Size(21, 20);
-            this.tsbTexto.Tag = "texto";
-            this.tsbTexto.Text = "toolStripButton1";
-            this.tsbTexto.ToolTipText = "Texto";
-            this.tsbTexto.Click += new System.EventHandler(this.tsbLinea_Click);
             // 
             // msEdiGrafico
             // 
@@ -501,33 +254,33 @@
             // itNuevo
             // 
             this.itNuevo.Name = "itNuevo";
-            this.itNuevo.Size = new System.Drawing.Size(116, 22);
+            this.itNuevo.Size = new System.Drawing.Size(180, 22);
             this.itNuevo.Text = "Nuevo";
             this.itNuevo.Click += new System.EventHandler(this.itNuevo_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // itAbrir
             // 
             this.itAbrir.Name = "itAbrir";
-            this.itAbrir.Size = new System.Drawing.Size(116, 22);
+            this.itAbrir.Size = new System.Drawing.Size(180, 22);
             this.itAbrir.Text = "Abrir";
             this.itAbrir.Click += new System.EventHandler(this.itAbrir_Click);
             // 
             // itGuardar
             // 
             this.itGuardar.Name = "itGuardar";
-            this.itGuardar.Size = new System.Drawing.Size(116, 22);
+            this.itGuardar.Size = new System.Drawing.Size(180, 22);
             this.itGuardar.Text = "Guardar";
             this.itGuardar.Click += new System.EventHandler(this.itGuardar_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(113, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // itSalir
             // 
@@ -539,7 +292,7 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(113, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(177, 6);
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // tsmEdicion
@@ -570,12 +323,12 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(167, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
             // 
             // itTamanyo
             // 
             this.itTamanyo.Name = "itTamanyo";
-            this.itTamanyo.Size = new System.Drawing.Size(170, 22);
+            this.itTamanyo.Size = new System.Drawing.Size(180, 22);
             this.itTamanyo.Text = "Tamaño de Dibujo";
             this.itTamanyo.Click += new System.EventHandler(this.itTamanyo_Click);
             // 
@@ -633,7 +386,7 @@
             // itTrazo
             // 
             this.itTrazo.Name = "itTrazo";
-            this.itTrazo.Size = new System.Drawing.Size(180, 22);
+            this.itTrazo.Size = new System.Drawing.Size(134, 22);
             this.itTrazo.Tag = "trazo";
             this.itTrazo.Text = "Trazo";
             this.itTrazo.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -641,7 +394,7 @@
             // itLinea
             // 
             this.itLinea.Name = "itLinea";
-            this.itLinea.Size = new System.Drawing.Size(180, 22);
+            this.itLinea.Size = new System.Drawing.Size(134, 22);
             this.itLinea.Tag = "linea";
             this.itLinea.Text = "Línea";
             this.itLinea.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -649,7 +402,7 @@
             // itRectangulo
             // 
             this.itRectangulo.Name = "itRectangulo";
-            this.itRectangulo.Size = new System.Drawing.Size(180, 22);
+            this.itRectangulo.Size = new System.Drawing.Size(134, 22);
             this.itRectangulo.Tag = "rectangulo";
             this.itRectangulo.Text = "Rectángulo";
             this.itRectangulo.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -657,7 +410,7 @@
             // itCirculo
             // 
             this.itCirculo.Name = "itCirculo";
-            this.itCirculo.Size = new System.Drawing.Size(180, 22);
+            this.itCirculo.Size = new System.Drawing.Size(134, 22);
             this.itCirculo.Tag = "circulo";
             this.itCirculo.Text = "Círculo";
             this.itCirculo.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -665,7 +418,7 @@
             // itElipse
             // 
             this.itElipse.Name = "itElipse";
-            this.itElipse.Size = new System.Drawing.Size(180, 22);
+            this.itElipse.Size = new System.Drawing.Size(134, 22);
             this.itElipse.Tag = "elipse";
             this.itElipse.Text = "Elipse";
             this.itElipse.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -673,7 +426,7 @@
             // itTexto
             // 
             this.itTexto.Name = "itTexto";
-            this.itTexto.Size = new System.Drawing.Size(180, 22);
+            this.itTexto.Size = new System.Drawing.Size(134, 22);
             this.itTexto.Tag = "texto";
             this.itTexto.Text = "Texto";
             this.itTexto.Click += new System.EventHandler(this.tsbLinea_Click);
@@ -763,7 +516,7 @@
             // itVertical
             // 
             this.itVertical.Name = "itVertical";
-            this.itVertical.Size = new System.Drawing.Size(180, 22);
+            this.itVertical.Size = new System.Drawing.Size(176, 22);
             this.itVertical.Tag = "1";
             this.itVertical.Text = "Líneas Verticales";
             this.itVertical.Click += new System.EventHandler(this.itVertical_Click);
@@ -771,7 +524,7 @@
             // itCuadricula
             // 
             this.itCuadricula.Name = "itCuadricula";
-            this.itCuadricula.Size = new System.Drawing.Size(180, 22);
+            this.itCuadricula.Size = new System.Drawing.Size(176, 22);
             this.itCuadricula.Tag = "2";
             this.itCuadricula.Text = "Cuadrícula";
             this.itCuadricula.Click += new System.EventHandler(this.itVertical_Click);
@@ -779,7 +532,7 @@
             // itHorizontal
             // 
             this.itHorizontal.Name = "itHorizontal";
-            this.itHorizontal.Size = new System.Drawing.Size(180, 22);
+            this.itHorizontal.Size = new System.Drawing.Size(176, 22);
             this.itHorizontal.Tag = "3";
             this.itHorizontal.Text = "Líneas Horizontales";
             this.itHorizontal.Click += new System.EventHandler(this.itVertical_Click);
@@ -787,7 +540,7 @@
             // itDiagonal
             // 
             this.itDiagonal.Name = "itDiagonal";
-            this.itDiagonal.Size = new System.Drawing.Size(180, 22);
+            this.itDiagonal.Size = new System.Drawing.Size(176, 22);
             this.itDiagonal.Tag = "4";
             this.itDiagonal.Text = "Líneas Diagonales";
             this.itDiagonal.Click += new System.EventHandler(this.itVertical_Click);
@@ -795,7 +548,7 @@
             // itZigZag
             // 
             this.itZigZag.Name = "itZigZag";
-            this.itZigZag.Size = new System.Drawing.Size(180, 22);
+            this.itZigZag.Size = new System.Drawing.Size(176, 22);
             this.itZigZag.Tag = "5";
             this.itZigZag.Text = "Líneas en Zig Zag";
             this.itZigZag.Click += new System.EventHandler(this.itVertical_Click);
@@ -803,7 +556,7 @@
             // itMosaico
             // 
             this.itMosaico.Name = "itMosaico";
-            this.itMosaico.Size = new System.Drawing.Size(180, 22);
+            this.itMosaico.Size = new System.Drawing.Size(176, 22);
             this.itMosaico.Tag = "6";
             this.itMosaico.Text = "Mosaico Escocés";
             this.itMosaico.Click += new System.EventHandler(this.itVertical_Click);
@@ -811,7 +564,7 @@
             // itSolido
             // 
             this.itSolido.Name = "itSolido";
-            this.itSolido.Size = new System.Drawing.Size(180, 22);
+            this.itSolido.Size = new System.Drawing.Size(176, 22);
             this.itSolido.Tag = "7";
             this.itSolido.Text = "Color Sólido";
             this.itSolido.Click += new System.EventHandler(this.itVertical_Click);
@@ -819,7 +572,7 @@
             // itSinRelleno
             // 
             this.itSinRelleno.Name = "itSinRelleno";
-            this.itSinRelleno.Size = new System.Drawing.Size(180, 22);
+            this.itSinRelleno.Size = new System.Drawing.Size(176, 22);
             this.itSinRelleno.Tag = "8";
             this.itSinRelleno.Text = "Sin Relleno";
             this.itSinRelleno.Click += new System.EventHandler(this.itVertical_Click);
@@ -869,14 +622,14 @@
             // itInstrucciones
             // 
             this.itInstrucciones.Name = "itInstrucciones";
-            this.itInstrucciones.Size = new System.Drawing.Size(144, 22);
+            this.itInstrucciones.Size = new System.Drawing.Size(180, 22);
             this.itInstrucciones.Text = "Instrucciones";
             this.itInstrucciones.Click += new System.EventHandler(this.itInstrucciones_Click);
             // 
             // itAcercade
             // 
             this.itAcercade.Name = "itAcercade";
-            this.itAcercade.Size = new System.Drawing.Size(144, 22);
+            this.itAcercade.Size = new System.Drawing.Size(180, 22);
             this.itAcercade.Text = "Acerca de";
             // 
             // stEstado
@@ -952,6 +705,10 @@
             this.pnEditorGrafico.Size = new System.Drawing.Size(652, 416);
             this.pnEditorGrafico.TabIndex = 4;
             // 
+            // dlgAbrirDibujo
+            // 
+            this.dlgAbrirDibujo.FileName = "Dibujo";
+            // 
             // pbEdigrafi
             // 
             this.pbEdigrafi.BackColor = System.Drawing.Color.White;
@@ -965,9 +722,239 @@
             this.pbEdigrafi.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbEdigrafi_MouseMove);
             this.pbEdigrafi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbEdigrafi_MouseUp);
             // 
-            // dlgAbrirDibujo
+            // tsbTrazo
             // 
-            this.dlgAbrirDibujo.FileName = "Dibujo";
+            this.tsbTrazo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbTrazo.Image = global::EditorGrafico.Properties.Resources.lapiz;
+            this.tsbTrazo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbTrazo.Name = "tsbTrazo";
+            this.tsbTrazo.Size = new System.Drawing.Size(21, 20);
+            this.tsbTrazo.Tag = "trazo";
+            this.tsbTrazo.Text = "toolStripButton1";
+            this.tsbTrazo.ToolTipText = "Lápiz";
+            this.tsbTrazo.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbLinea
+            // 
+            this.tsbLinea.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbLinea.Image = global::EditorGrafico.Properties.Resources.linea;
+            this.tsbLinea.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbLinea.Name = "tsbLinea";
+            this.tsbLinea.Size = new System.Drawing.Size(21, 20);
+            this.tsbLinea.Tag = "linea";
+            this.tsbLinea.Text = "toolStripButton1";
+            this.tsbLinea.ToolTipText = "Línea";
+            this.tsbLinea.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbRectangulo
+            // 
+            this.tsbRectangulo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbRectangulo.Image = global::EditorGrafico.Properties.Resources.rectangulo;
+            this.tsbRectangulo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRectangulo.Name = "tsbRectangulo";
+            this.tsbRectangulo.Size = new System.Drawing.Size(21, 20);
+            this.tsbRectangulo.Tag = "rectangulo";
+            this.tsbRectangulo.Text = "toolStripButton1";
+            this.tsbRectangulo.ToolTipText = "Rectángulo";
+            this.tsbRectangulo.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbCirculo
+            // 
+            this.tsbCirculo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCirculo.Image = global::EditorGrafico.Properties.Resources.circulo;
+            this.tsbCirculo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCirculo.Name = "tsbCirculo";
+            this.tsbCirculo.Size = new System.Drawing.Size(21, 20);
+            this.tsbCirculo.Tag = "circulo";
+            this.tsbCirculo.Text = "toolStripButton1";
+            this.tsbCirculo.ToolTipText = "Circulo";
+            this.tsbCirculo.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbElipse
+            // 
+            this.tsbElipse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbElipse.Image = global::EditorGrafico.Properties.Resources.elipse;
+            this.tsbElipse.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbElipse.Name = "tsbElipse";
+            this.tsbElipse.Size = new System.Drawing.Size(21, 20);
+            this.tsbElipse.Tag = "elipse";
+            this.tsbElipse.Text = "toolStripButton1";
+            this.tsbElipse.ToolTipText = "Elipse";
+            this.tsbElipse.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbTexto
+            // 
+            this.tsbTexto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbTexto.Image = global::EditorGrafico.Properties.Resources.texto;
+            this.tsbTexto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbTexto.Name = "tsbTexto";
+            this.tsbTexto.Size = new System.Drawing.Size(21, 20);
+            this.tsbTexto.Tag = "texto";
+            this.tsbTexto.Text = "toolStripButton1";
+            this.tsbTexto.ToolTipText = "Texto";
+            this.tsbTexto.Click += new System.EventHandler(this.tsbLinea_Click);
+            // 
+            // tsbNuevo
+            // 
+            this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbNuevo.Image = global::EditorGrafico.Properties.Resources.NewFile_6276_32;
+            this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbNuevo.Name = "tsbNuevo";
+            this.tsbNuevo.Size = new System.Drawing.Size(23, 22);
+            this.tsbNuevo.Text = "toolStripButton1";
+            this.tsbNuevo.ToolTipText = "Nuevo";
+            this.tsbNuevo.Click += new System.EventHandler(this.itNuevo_Click);
+            // 
+            // tsbAbrir
+            // 
+            this.tsbAbrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbAbrir.Image = global::EditorGrafico.Properties.Resources.Open_6529_24;
+            this.tsbAbrir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbAbrir.Name = "tsbAbrir";
+            this.tsbAbrir.Size = new System.Drawing.Size(23, 22);
+            this.tsbAbrir.Text = "toolStripButton1";
+            this.tsbAbrir.ToolTipText = "Abrir";
+            this.tsbAbrir.Click += new System.EventHandler(this.itAbrir_Click);
+            // 
+            // tsbGuardar
+            // 
+            this.tsbGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbGuardar.Image = global::EditorGrafico.Properties.Resources.icono_guardar;
+            this.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbGuardar.Name = "tsbGuardar";
+            this.tsbGuardar.Size = new System.Drawing.Size(23, 22);
+            this.tsbGuardar.Text = "toolStripButton1";
+            this.tsbGuardar.ToolTipText = "Guardar";
+            this.tsbGuardar.Click += new System.EventHandler(this.itGuardar_Click);
+            // 
+            // tsbGoma
+            // 
+            this.tsbGoma.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbGoma.Image = global::EditorGrafico.Properties.Resources.goma;
+            this.tsbGoma.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbGoma.Name = "tsbGoma";
+            this.tsbGoma.Size = new System.Drawing.Size(23, 22);
+            this.tsbGoma.Text = "toolStripButton2";
+            this.tsbGoma.ToolTipText = "Goma";
+            this.tsbGoma.Click += new System.EventHandler(this.tsbGoma_Click);
+            // 
+            // tsbBorrarSeleccion
+            // 
+            this.tsbBorrarSeleccion.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbBorrarSeleccion.Image = global::EditorGrafico.Properties.Resources.seleccion;
+            this.tsbBorrarSeleccion.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBorrarSeleccion.Name = "tsbBorrarSeleccion";
+            this.tsbBorrarSeleccion.Size = new System.Drawing.Size(23, 22);
+            this.tsbBorrarSeleccion.Text = "toolStripButton2";
+            this.tsbBorrarSeleccion.ToolTipText = "Borrar selección";
+            this.tsbBorrarSeleccion.Click += new System.EventHandler(this.tsbBorrarSeleccion_Click_1);
+            // 
+            // tsbColorFondo
+            // 
+            this.tsbColorFondo.Image = global::EditorGrafico.Properties.Resources.colorfondo1;
+            this.tsbColorFondo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbColorFondo.Name = "tsbColorFondo";
+            this.tsbColorFondo.Size = new System.Drawing.Size(93, 22);
+            this.tsbColorFondo.Text = "Color Fondo";
+            this.tsbColorFondo.Click += new System.EventHandler(this.tsbColorFondo_Click);
+            // 
+            // tsbColorlapiz
+            // 
+            this.tsbColorlapiz.Image = global::EditorGrafico.Properties.Resources.colorfondo1;
+            this.tsbColorlapiz.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbColorlapiz.Name = "tsbColorlapiz";
+            this.tsbColorlapiz.Size = new System.Drawing.Size(86, 22);
+            this.tsbColorlapiz.Text = "Color Lápiz";
+            this.tsbColorlapiz.Click += new System.EventHandler(this.tsbColorlapiz_Click);
+            // 
+            // tsbColorRelleno
+            // 
+            this.tsbColorRelleno.Image = global::EditorGrafico.Properties.Resources.colorfondo;
+            this.tsbColorRelleno.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbColorRelleno.Name = "tsbColorRelleno";
+            this.tsbColorRelleno.Size = new System.Drawing.Size(98, 22);
+            this.tsbColorRelleno.Text = "Color Relleno";
+            this.tsbColorRelleno.Click += new System.EventHandler(this.tsbColorRelleno_Click);
+            // 
+            // ddtsbGrosor
+            // 
+            this.ddtsbGrosor.AutoSize = false;
+            this.ddtsbGrosor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ddtsbGrosor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.itG1,
+            this.itG2,
+            this.itG3,
+            this.itG4,
+            this.itG5,
+            this.itG6});
+            this.ddtsbGrosor.Image = global::EditorGrafico.Properties.Resources.Grosor6;
+            this.ddtsbGrosor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ddtsbGrosor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ddtsbGrosor.Name = "ddtsbGrosor";
+            this.ddtsbGrosor.Size = new System.Drawing.Size(90, 22);
+            this.ddtsbGrosor.Text = "Grosor";
+            this.ddtsbGrosor.Click += new System.EventHandler(this.ddtsbGrosor_Click);
+            // 
+            // itG1
+            // 
+            this.itG1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG1.BackgroundImage")));
+            this.itG1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG1.Name = "itG1";
+            this.itG1.Padding = new System.Windows.Forms.Padding(0);
+            this.itG1.Size = new System.Drawing.Size(67, 20);
+            this.itG1.Tag = "1";
+            this.itG1.Click += new System.EventHandler(this.itG1_Click);
+            // 
+            // itG2
+            // 
+            this.itG2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG2.BackgroundImage")));
+            this.itG2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG2.Name = "itG2";
+            this.itG2.Size = new System.Drawing.Size(67, 22);
+            this.itG2.Tag = "2";
+            this.itG2.Click += new System.EventHandler(this.itG1_Click);
+            // 
+            // itG3
+            // 
+            this.itG3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG3.BackgroundImage")));
+            this.itG3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG3.Name = "itG3";
+            this.itG3.Size = new System.Drawing.Size(67, 22);
+            this.itG3.Tag = "3";
+            this.itG3.Click += new System.EventHandler(this.itG1_Click);
+            // 
+            // itG4
+            // 
+            this.itG4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG4.BackgroundImage")));
+            this.itG4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG4.Name = "itG4";
+            this.itG4.Size = new System.Drawing.Size(67, 22);
+            this.itG4.Tag = "4";
+            this.itG4.Click += new System.EventHandler(this.itG1_Click);
+            // 
+            // itG5
+            // 
+            this.itG5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG5.BackgroundImage")));
+            this.itG5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG5.Name = "itG5";
+            this.itG5.Size = new System.Drawing.Size(67, 22);
+            this.itG5.Tag = "5";
+            this.itG5.Click += new System.EventHandler(this.itG1_Click);
+            // 
+            // itG6
+            // 
+            this.itG6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("itG6.BackgroundImage")));
+            this.itG6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.itG6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.itG6.Name = "itG6";
+            this.itG6.Size = new System.Drawing.Size(67, 22);
+            this.itG6.Tag = "6";
+            this.itG6.Click += new System.EventHandler(this.itG1_Click);
             // 
             // fmEdiGrafico
             // 
@@ -1025,7 +1012,6 @@
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbAbrir;
         private System.Windows.Forms.ToolStripButton tsbGuardar;
-        private System.Windows.Forms.ToolStripButton tsbTamanyo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton tsbGoma;
         private System.Windows.Forms.ToolStripButton tsbBorrarSeleccion;
