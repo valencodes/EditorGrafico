@@ -31,5 +31,34 @@ namespace EditorGrafico
         {
 
         }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barraEstandarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            itBarraEstandar.Checked = !itBarraEstandar.Checked;
+            itcBarraEstandar.Checked = !itcBarraEstandar.Checked;
+            // Mostramos barra correspondiente o no
+            tsEstandar.Visible = itBarraEstandar.Checked;
+        }
+
+        private void itBarraLateral_Click(object sender, EventArgs e)
+        {
+            itBarraLateral.Checked = !itBarraLateral.Checked;
+            itcBarraLateral.Checked = !itcBarraLateral.Checked;
+            // Mostramos barra correspondiente o no
+            tsLateral.Visible = itBarraLateral.Checked;
+        }
+
+        private void itBarraEstado_Click(object sender, EventArgs e)
+        {
+            itBarraEstado.Checked = !itBarraEstado.Checked;
+            itcBarraEstado.Checked = !itcBarraEstado.Checked;
+            // Mostramos barra correspondiente o no
+            stEstado.Visible = itBarraEstado.Checked;
+        }
     }
 }

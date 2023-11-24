@@ -34,7 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbPxIz = new System.Windows.Forms.Label();
             this.lbPxDer = new System.Windows.Forms.Label();
-            this.button1btAceptar = new System.Windows.Forms.Button();
+            this.btAceptar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,6 +63,7 @@
             this.tbIzq.Name = "tbIzq";
             this.tbIzq.Size = new System.Drawing.Size(78, 20);
             this.tbIzq.TabIndex = 2;
+            this.tbIzq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIzq_KeyPress);
             // 
             // textBox1
             // 
@@ -71,6 +72,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(78, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbIzq_KeyPress);
             // 
             // lbPxIz
             // 
@@ -90,16 +92,16 @@
             this.lbPxDer.TabIndex = 3;
             this.lbPxDer.Text = "px";
             // 
-            // button1btAceptar
+            // btAceptar
             // 
-            this.button1btAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1btAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1btAceptar.Location = new System.Drawing.Point(33, 99);
-            this.button1btAceptar.Name = "button1btAceptar";
-            this.button1btAceptar.Size = new System.Drawing.Size(75, 23);
-            this.button1btAceptar.TabIndex = 4;
-            this.button1btAceptar.Text = "Aceptar";
-            this.button1btAceptar.UseVisualStyleBackColor = true;
+            this.btAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAceptar.Location = new System.Drawing.Point(33, 99);
+            this.btAceptar.Name = "btAceptar";
+            this.btAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btAceptar.TabIndex = 4;
+            this.btAceptar.Text = "Aceptar";
+            this.btAceptar.UseVisualStyleBackColor = true;
             // 
             // btCancelar
             // 
@@ -118,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 152);
             this.Controls.Add(this.btCancelar);
-            this.Controls.Add(this.button1btAceptar);
+            this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.lbPxDer);
             this.Controls.Add(this.lbPxIz);
             this.Controls.Add(this.textBox1);
@@ -140,7 +142,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbPxIz;
         private System.Windows.Forms.Label lbPxDer;
-        private System.Windows.Forms.Button button1btAceptar;
+        private System.Windows.Forms.Button btAceptar;
         private System.Windows.Forms.Button btCancelar;
     }
 }

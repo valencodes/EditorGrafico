@@ -78,6 +78,9 @@
     <EmbeddedResource Include="fmTamanyo.resx">
       <DependentUpon>fmTamanyo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fmTexto.resx">
+      <DependentUpon>fmTexto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
