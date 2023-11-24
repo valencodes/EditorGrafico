@@ -60,5 +60,10 @@ namespace EditorGrafico
             // Mostramos barra correspondiente o no
             stEstado.Visible = itBarraEstado.Checked;
         }
+
+        private void fmEdiGrafico_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
     }
 }
